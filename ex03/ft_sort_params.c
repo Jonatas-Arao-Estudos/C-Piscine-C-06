@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 17:05:01 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/09/04 17:45:50 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/09/05 10:39:56 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strcmp(char *s1, char *s2)
 	index = 0;
 	while (s1[index] == s2[index] && s1[index] != '\0')
 		index = index + 1;
-	return (s1[index] - s2[index]);
+	return ((unsigned char)s1[index] - (unsigned char)s2[index]);
 }
 
 void	ft_putstr(char *str)
